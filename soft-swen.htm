@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Case - Custom Carrying Cases</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <style>
+        .product-section {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        
+        .product-images {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+        }
+        
+        .product-image {
+          border: 1px solid #000;
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+        }
+        
+        .product-info h1 {
+          margin-bottom: 15px;
+        }
+        
+        .product-info p {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+        
+        @media (min-width: 768px) {
+          .product-info {
+            padding-left: 1.5rem;
+          }
+          .product-section {
+            flex-direction: row;
+          }
+          
+          .product-images {
+            width: 33%;
+          }
+          
+          .product-info {
+            width: 55%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">
+                <span style="color: #000;">direct</span><span style="color: #0066cc;">case</span>
+                </span>
+                <span class="tagline">Your Direct Source for Quality Manufactured Custom Carrying Cases</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injection-molded.html">Injection-Molded</a></li>
+                    <li><a href="blow-molded.htm">Blow-Molded</a></li>
+                    <li><a href="soft-swen.htm">Soft</a></li>
+                    <li><a href="aluminum.htm">Aluminum</a></li>
+                    <li><a href="custom-foam.htm">Custom Foam</a></li>
+                    <li><a href="eva.htm">EVA</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="product-section">
+            <div class="product-images">
+              <img src="assets/soft-swen/shutterstock_1925234657.jpg" alt="Red and white custom soft case" class="product-image">
+              <img src="assets/soft-swen/shutterstock_1928413088.jpg" alt="Camouflage messenger bag" class="product-image">
+              <img src="assets/soft-swen/shutterstock_1978942382.jpg" alt="Custom printed soft case" class="product-image">
+              <img src="assets/soft-swen/shutterstock_2543843645.jpg" alt="Red medical soft case" class="product-image">
+              <img src="assets/soft-swen/shutterstock_332572013.jpg" alt="Red and black soft cases" class="product-image">
+              <img src="assets/soft-swen/shutterstock_588947171.jpg" alt="Red and black soft cases" class="product-image">
+            </div>
+            
+            <div class="product-info">
+              <h1>Custom Soft Cases</h1>
+              <p>From duffel and messenger bags to backpacks, Direct Case offers customized soft cases for just about any purpose imaginable — athletic, military, medical, etc., and are perfect due to their lightweight and collapsable features. Fabric patterns and case engineering are easily altered, allowing for easier and quicker customization.</p>
+              <p>No matter what the specific use is, cases need to be able to withstand the daily use, the rough handling, and the passage of time that come with their various uses. To help with this, we offer a wide range of fabrics, finishes and features to suit any requirements and/or environments specific to our customers needs.</p>
+              <p>If you would like more information or would like to request a catalog or samples, please contact us by <a href="mailto:info@example.com">email</a> or give us a call at 580-230-8606.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © 2007-2009 Direct Case Co. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

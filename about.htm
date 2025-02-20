@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Case - Custom Carrying Cases</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <style>
+        .product-section {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        
+        .product-images {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .product-image:first-child {
+          border: 1px solid;
+        }
+        
+        .product-info h1 {
+          margin-bottom: 15px;
+        }
+        
+        .product-info p {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+        
+        @media (min-width: 768px) {
+          .product-section {
+            flex-direction: row;
+          }
+          
+          .product-images {
+            width: 33%;
+          }
+          
+          .product-info {
+            width: 55%;
+            padding-left: 1.5rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">
+                <span style="color: #000;">direct</span><span style="color: #0066cc;">case</span>
+                </span>
+                <span class="tagline">Your Direct Source for Quality Manufactured Custom Carrying Cases</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injection-molded.html">Injection-Molded</a></li>
+                    <li><a href="blow-molded.htm">Blow-Molded</a></li>
+                    <li><a href="soft-swen.htm">Soft</a></li>
+                    <li><a href="aluminum.htm">Aluminum</a></li>
+                    <li><a href="custom-foam.htm">Custom Foam</a></li>
+                    <li><a href="eva.htm">EVA</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="product-section">
+            <div class="product-images">
+                <img src="assets/about/dc-about-map.jpg" alt="Open aluminum case with rifle" class="product-image">
+                <img src="assets/about/shutterstock_2092478905.jpg" alt="Closed aluminum cases" class="product-image">
+            </div>
+            
+            <div class="product-info">
+              <h1>About Direct Case</h1>
+              <p>With strong ties to manufacturing facilities located in the USA and around the world, Direct Case Co. is your direct source for quality custom carrying cases. The goals of Direct Case are to provide you with top quality soft and hard carrying cases and bags, superior customer service and on time deliveries.</p>
+              <p>Direct Case can handle all stages of your carrying case - from research and design, product sampling, production and logistics. We make it worry free and easy to do business. Make you life easier and give Direct Case a call today.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © 2007-2009 Direct Case Co. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

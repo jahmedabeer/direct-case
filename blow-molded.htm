@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Case - Custom Carrying Cases</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <style>
+        .product-section {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        
+        .product-images {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        
+        .product-image {
+          border: 1px solid #000;
+          width: 100%;
+        }
+        
+        .product-info h1 {
+          margin-bottom: 15px;
+        }
+        
+        .product-info p {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+        
+        @media (min-width: 768px) {
+          .product-info {
+            padding-left: 1.5rem;
+          }
+          .product-section {
+            flex-direction: row;
+          }
+          
+          .product-images {
+            flex-direction: column;
+            width: 33%;
+          }
+          
+          .product-info {
+            width: 55%;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">
+                <span style="color: #000;">direct</span><span style="color: #0066cc;">case</span>
+                </span>
+                <span class="tagline">Your Direct Source for Quality Manufactured Custom Carrying Cases</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injection-molded.html">Injection-Molded</a></li>
+                    <li><a href="blow-molded.htm">Blow-Molded</a></li>
+                    <li><a href="soft-swen.htm">Soft</a></li>
+                    <li><a href="aluminum.htm">Aluminum</a></li>
+                    <li><a href="custom-foam.htm">Custom Foam</a></li>
+                    <li><a href="eva.htm">EVA</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="product-section">
+            <div class="product-images">
+              <img src="assets/blow-molded/142closed.jpg" alt="Blow-molded hard case" class="product-image">
+              <img src="assets/blow-molded/183closed.jpg" alt="Interior detail of blow-molded case" class="product-image">  
+              <img src="assets/blow-molded/215open.jpg" alt="Latch detail of blow-molded case" class="product-image">
+              <img src="assets/blow-molded/215closed.jpg" alt="Latch detail of blow-molded case" class="product-image">
+            </div>
+            
+            <div class="product-info">
+              <h1>Blow-Molded Hard Cases</h1>
+              <p>Our blow-molded plastic cases provide an even more durable solution to your hard case needs. These cases are molded from high density plastic and are virtually scratch resistant. The lids and backs are double wall construction, giving them added protection. Our standard cases come in black only, but color options are available when minimum order requirements are met. Further flexibility in storing the contents of your case is gained through the use of pick and pluck foam or custom foam inserts.</p>
+              <p>If you would like more information on our blow-molded or injection-molded case, send us an <a href="mailto:info@example.com">email</a> or give us a call at 580-230-8606.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © 2007-2009 Direct Case Co. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

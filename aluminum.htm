@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Case - Custom Carrying Cases</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <style>
+        .product-section {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        
+        .product-images {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        
+        .product-info h1 {
+          margin-bottom: 15px;
+        }
+        
+        .product-info p {
+          margin-bottom: 15px;
+          line-height: 1.5;
+        }
+        
+        @media (min-width: 768px) {
+          .product-section {
+            flex-direction: row;
+          }
+          
+          .product-images {
+            width: 33%;
+          }
+          
+          .product-info {
+            width: 55%;
+            padding-left: 1.5rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-text">
+                <span style="color: #000;">direct</span><span style="color: #0066cc;">case</span>
+                </span>
+                <span class="tagline">Your Direct Source for Quality Manufactured Custom Carrying Cases</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="injection-molded.html">Injection-Molded</a></li>
+                    <li><a href="blow-molded.htm">Blow-Molded</a></li>
+                    <li><a href="soft-swen.htm">Soft</a></li>
+                    <li><a href="aluminum.htm">Aluminum</a></li>
+                    <li><a href="custom-foam.htm">Custom Foam</a></li>
+                    <li><a href="eva.htm">EVA</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="product-section">
+            <div class="product-images">
+              <img src="assets/aluminum/pexels-photo-177688.jpg" alt="Closed aluminum cases" class="product-image">
+              <img src="assets/aluminum/shutterstock_165870752.jpg" alt="Open aluminum case with rifle" class="product-image">
+            </div>
+            
+            <div class="product-info">
+              <h1>Aluminum Cases</h1>
+              <p>Our aluminum cases are practically indestructible, making them perfect for the most punishing environments. Most commonly used for carrying pistols, rifles, photography equipment, instruments and other sensitive equipment, our aluminum cases will take the abuse while protecting your equipment stowed safely inside.</p>
+              <p>Heavy-duty handles, latches and hinges help to make our aluminum cases a reliable and sturdy method of protecting and transporting your equipment. Additionally, thick, custom foam inserts may be added to provide further protection from shock and movement.</p>
+              <p>For more information on our aluminum case, please contact us by <a href="mailto:info@example.com">email</a> or call us at 580-230-8606.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            © 2007-2009 Direct Case Co. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
