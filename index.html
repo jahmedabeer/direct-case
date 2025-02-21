@@ -10,10 +10,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <span class="logo-text">
-                <span style="color: #000;">direct</span><span style="color: #0066cc;">case</span>
-                </span>
-                <span class="tagline">Your Direct Source for Quality Manufactured Custom Carrying Cases</span>
+              <img src="/assets/logo.png" alt="Direct Case logo" class="logo-image">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
@@ -40,8 +37,9 @@
                 </p>
             </div>
             <div class="right-column">
-                <img src="/assets/home/Bag-Zipper.webp" alt="Case handle" class="main-image">
+                <img id="featured" src="/assets/home/Bag-Zipper.webp" alt="Case handle" class="main-image">
                 <div class="thumbnail-gallery">
+                    <img src="/assets/home/Bag-Zipper.webp" alt="Case handle" class="thumbnail">
                     <img src="/assets/home/Aluminum-Case.webp" alt="Military style carrying case" class="thumbnail">
                     <img src="/assets/home/Colored-Foam.webp" alt="Case material" class="thumbnail">
                     <img src="/assets/home/EVA-Case.webp" alt="Case interior" class="thumbnail">
@@ -54,5 +52,27 @@
             © 2007-2009 Direct Case Co. All Rights Reserved.
         </footer>
     </div>
+
+    <script>
+        const gallery = {
+            init() {
+                this.featured = document.getElementById('featured');
+                this.thumbs = document.querySelectorAll('.thumbnail');
+                
+                this.thumbs.forEach(thumb => {
+                    thumb.addEventListener('click', () => this.changeImage(thumb));
+                });
+            },
+        
+            changeImage(thumb) {
+                this.featured.src = thumb.src;
+                
+                this.thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+            }
+        };
+        
+        document.addEventListener('DOMContentLoaded', () => gallery.init());
+    </script>
 </body>
 </html>
