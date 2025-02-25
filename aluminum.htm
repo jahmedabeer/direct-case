@@ -12,9 +12,27 @@
         }
         
         .product-images {
-          display: flex;
-          flex-direction: column;
+          padding: 15px;
+          border: 1px solid #000;
+        }
+
+        .thumbnails {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           gap: 10px;
+        }
+
+        .thumbnails img {
+          width: 100%;
+          height: auto;
+          border: 1px solid #000;
+          height: 150px;
+          object-fit: contain;
+          background: white;
+        }
+
+        .thumbnails .wide-thumbnail {
+          grid-column: span 2;
         }
         
         .product-info h1 {
@@ -65,15 +83,21 @@
 
         <div class="product-section">
             <div class="product-images">
-              <img src="assets/alm/pexels-photo-177688.webp" alt="Closed aluminum cases" class="product-image">
-              <img src="assets/alm/shutterstock_165870752.webp" alt="Open aluminum case with rifle" class="product-image">
+              <img src="assets/alm/pexels-photo-177688.webp" alt="Closed aluminum cases">
+              <div class="thumbnails">
+               <img src="assets/alm/case1.jpg" alt="Open aluminum case with rifle">
+               <img src="assets/alm/case2.jpg" alt="Open aluminum case with rifle">
+               <img src="assets/alm/case3.jpg" alt="Open aluminum case with rifle">
+               <img src="assets/alm/case4.jpg" alt="Open aluminum case with rifle">
+               <img src="assets/alm/case5.jpg" alt="Open aluminum case with rifle" class="wide-thumbnail">
+              </div>
             </div>
             
             <div class="product-info">
               <h1>Aluminum Cases</h1>
               <p>Our aluminum cases are practically indestructible, making them perfect for the most punishing environments. Most commonly used for carrying pistols, rifles, photography equipment, instruments and other sensitive equipment, our aluminum cases will take the abuse while protecting your equipment stowed safely inside.</p>
               <p>Heavy-duty handles, latches and hinges help to make our aluminum cases a reliable and sturdy method of protecting and transporting your equipment. Additionally, thick, custom foam inserts may be added to provide further protection from shock and movement.</p>
-              <p>For more information on our aluminum case, please contact us by <a href="mailto:info@example.com">email</a> or call us at 580-230-8606.</p>
+              <p>For more information on our aluminum case, please contact us by <a href="mailto:sales@directcase.com">email</a> or call us at 580-230-8606.</p>
             </div>
         </div>
 

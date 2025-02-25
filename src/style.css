@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* body{background-color: #1a1a1a;} */
 
 img{max-width: 100%;}
 a{color: #0066cc;text-decoration: none;}
@@ -23,6 +24,9 @@ header{
 }
 
 .logo{display: flex;}
+img.logo-image {
+    width: 100%;
+}
 
 .nav {
     margin-top: 15px;

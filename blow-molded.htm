@@ -12,14 +12,24 @@
         }
         
         .product-images {
-          display: flex;
-          flex-wrap: wrap;
+          padding: 15px;
+          border: 1px solid #000;
+        }
+        .thumbnails {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
           gap: 10px;
         }
-        
-        .product-image {
-          border: 1px solid #000;
+        .thumbnails img {
           width: 100%;
+          height: auto;
+          border: 1px solid #000;
+          height: 150px;
+          object-fit: contain;
+          background: white;
+        }
+        .thumbnails .wide-thumbnail {
+          grid-column: span 2;
         }
         
         .product-info h1 {
@@ -74,15 +84,17 @@
         <div class="product-section">
             <div class="product-images">
               <img src="assets/blow-molded/142closed.webp" alt="Blow-molded hard case" class="product-image">
-              <img src="assets/blow-molded/183closed.webp" alt="Interior detail of blow-molded case" class="product-image">  
-              <img src="assets/blow-molded/215open.webp" alt="Latch detail of blow-molded case" class="product-image">
-              <img src="assets/blow-molded/215closed.webp" alt="Latch detail of blow-molded case" class="product-image">
+              <div class="thumbnails">
+                <img src="assets/blow-molded/183closed.webp" alt="Interior detail of blow-molded case">  
+                <img src="assets/blow-molded/215open.webp" alt="Latch detail of blow-molded case">
+                <img src="assets/blow-molded/215closed.webp" alt="Latch detail of blow-molded case" class="wide-thumbnail">
+              </div>
             </div>
             
             <div class="product-info">
               <h1>Blow-Molded Hard Cases</h1>
               <p>Our blow-molded plastic cases provide an even more durable solution to your hard case needs. These cases are molded from high density plastic and are virtually scratch resistant. The lids and backs are double wall construction, giving them added protection. Our standard cases come in black only, but color options are available when minimum order requirements are met. Further flexibility in storing the contents of your case is gained through the use of pick and pluck foam or custom foam inserts.</p>
-              <p>If you would like more information on our blow-molded or injection-molded case, send us an <a href="mailto:info@example.com">email</a> or give us a call at 580-230-8606.</p>
+              <p>If you would like more information on our blow-molded or injection-molded case, send us an <a href="mailto:sales@directcase.com">email</a> or give us a call at 580-230-8606.</p>
             </div>
         </div>
 
